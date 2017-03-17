@@ -10,65 +10,36 @@
 </head>
 
 <body>
+
+
+
+
   <div class="background"></div>
   <div class="header">
+  <a class="p" href="portfolio.html">Projects</a>
+
+
+      <a class="p" href="lang.html">Skills</a>
   </div>
   <div class="name">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
     <h1>Valeria Di Gregorio</h1>
   </div>
   <div class="about">
-    <p>- Web Developer -</p>
-    <div id="p">
-      <button><a class="p" href="portfolio.html">Portfolio</a></button>
-      <br>
-      <br>
-      <button onclick="toggle_visibility('languages')">
-        <h2 id="lang">Languages</h2></button>
-    </div>
-    <ul id="languages">
-    <li style="visibility: hidden;">Languages</li>
-      <li id="one" >HTML5</li>
-      <li id="two">CSS3</li>
-      <li id="three">Javascript</li>
-      <li id="four">Jquery</li>
-      <li id="five">MongoDB</li>
-      <li id="six">React.js</li>
-      <li id="seven">Node.js</li>
-      <li id="eight">Angular.js</li>
-      <li id="nine">noSQL</li>
-      <li id="ten">mySQL</li>
-    </ul>
+    <p class="fontp">-Full Stack Web Developer -</p>
+    <p class="des">I am a recent Full Stack Web Development graduate from General Assembly,
+    <br>looking to explore my newfound passion and expand my knowledge in this field.
+    <br> I’m a curious self-learner and love building things, solving complex problems and enjoy taking on challenging tasks. </p>
+
+
   </div>
-  <div class="icons">
-    <a href="http://www.github.com/vdigregorio"><img class="sm" src="images/git.png" alt="github"></a>
-    <a href="http://www.linkedin.com/in/vdigregorio"><img class="sm" src="images/link.png" alt="linkedin"></a>
+   <div class="icons">
+    <a  class="me" href="http://www.github.com/vdigregorio"><img class="sm" src="images/git.png" alt="github"></a>
+    <a class="me" href="http://www.linkedin.com/in/vdigregorio"><img class="sm" src="images/link.png" alt="linkedin"></a>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" charset="utf-8" async defer>
- function toggle_visibility(id) {
-   var e = document.getElementById(id);
-   if(e.style.visibility == 'visible')
-      e.style.visibility = 'hidden';
-   else
-      e.style.visibility = 'visible';
-}
-//found this on http://codepen.io/dbpas/pen/LGudb
-var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
-    radius = '6em', //distance from center
-    start = -90, //shift start from 0
-    $elements = $('li:not(:first-child)'),
-    numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
-    slice = 360 * type / numberOfElements;
 
-$elements.each(function(i) {
-    var $self = $(this),
-        rotate = slice * i + start,
-        rotateReverse = rotate * -1;
-
-    $self.css({
-        'transform': 'rotate(' + rotate + 'deg) translate(' + radius + ') rotate(' + rotateReverse + 'deg)'
-    });
-});
   </script>
 </body>
 
