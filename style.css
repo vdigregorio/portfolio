@@ -15,6 +15,7 @@ body {
 }
 .header{
   float: right;
+
 }
 .row{
 display: flex;
@@ -33,6 +34,7 @@ flex-wrap: wrap;
 }
 .column{
 margin: 70px 70px 70px 170px;
+
 }
 .column2{
 margin: 70px 70px 70px 170px;
